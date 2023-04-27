@@ -27,6 +27,7 @@ public class PlayerScript : MonoBehaviour
         {
             PlayerMovementY();
             jumpAmount--;
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<UIScript>().UIJumpRefresh();
             Debug.Log("isJumping = true");
 
         }
@@ -38,10 +39,12 @@ public class PlayerScript : MonoBehaviour
 
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Floor")
+        if (collision.gameObject.tag == "Floor" && jumpAmount == 0)
         {
             isJumping = false;
-            jumpAmount = 2;
+            jumpAmount++;
+            jumpAmount++;
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<UIScript>().UIJumpRefresh();
             Debug.Log("isJumping = False");
         }
     }
@@ -56,5 +59,22 @@ public class PlayerScript : MonoBehaviour
     {
         rb.AddForce(Vector3.up * jumpSpeed);
     }
+
+    public void AddJump()
+    {
+        jumpAmount++;
+        jumpAmount++;
+        isJumping = false;
+    }
+
+    public void AddJump4()
+    {
+        jumpAmount++;
+        jumpAmount++;
+        jumpAmount++;
+        jumpAmount++;
+        isJumping = false;
+    }
+
 
 }
