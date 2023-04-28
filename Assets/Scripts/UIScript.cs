@@ -9,9 +9,12 @@ public class UIScript : MonoBehaviour
     public TMP_Text CoinsText;
     public TMP_Text JumpsText;
     public int Coins;
-    private GameObject[] CoinsLeft;
+    public GameObject[] CoinsLeft;
 
     private PlayerScript PlayerScript;
+
+    public Texture ClosedDoor;
+    public bool HasAllCoins;
 
     // Start is called before the first frame update
     void Start()
@@ -42,6 +45,7 @@ public class UIScript : MonoBehaviour
     {
         Coins++;
         UIRefresh();
+        AllCoinsCheck();
     }
 
     public void AddJumpUI()
@@ -49,6 +53,16 @@ public class UIScript : MonoBehaviour
         PlayerScript.jumpAmount++;
         PlayerScript.jumpAmount++;
         UIJumpRefresh();
+    }
+
+    public void AllCoinsCheck()
+    {
+        if(Coins == CoinsLeft.Length)
+        {
+            Debug.Log("PLAYER HAS ALL COINS");
+            GameObject.FindGameObjectWithTag("Door").GetComponent<DoorOpeningScript>().OpenDoor();
+            HasAllCoins = true;
+        }
     }
 
 }

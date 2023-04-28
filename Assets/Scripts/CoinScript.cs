@@ -11,7 +11,6 @@ public class CoinScript : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameObject.FindGameObjectWithTag("GameController").GetComponent<UIScript>().AddCoin();
-
             Destroy(this.gameObject);
         }
         
