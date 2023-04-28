@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -46,6 +47,11 @@ public class PlayerScript : MonoBehaviour
             jumpAmount++;
             GameObject.FindGameObjectWithTag("GameController").GetComponent<UIScript>().UIJumpRefresh();
             Debug.Log("isJumping = False");
+        }
+
+        if (collision.gameObject.tag == "Lava")
+        {
+            SceneManager.LoadScene("Death");
         }
     }
 

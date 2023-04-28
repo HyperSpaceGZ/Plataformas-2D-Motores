@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnterDoorScript : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class EnterDoorScript : MonoBehaviour
         if (DoorOpeningScript.IsDoorOpened = true &&  collision.gameObject.tag == "Player")
         {
             Debug.Log("YOU WIN!!!");
+            SceneManager.LoadScene("Win");
         }
 
     }

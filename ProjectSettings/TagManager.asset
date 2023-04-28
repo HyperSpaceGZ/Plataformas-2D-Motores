@@ -8,6 +8,7 @@ TagManager:
   - Coin
   - Plus2
   - Door
+  - Lava
   layers:
   - Default
   - TransparentFX

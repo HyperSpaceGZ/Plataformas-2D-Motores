@@ -709,8 +709,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Coins: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9adf903277534b149aedd8da904a6bb8, type: 2}
+  m_sharedMaterial: {fileID: 5178163906055332215, guid: 9adf903277534b149aedd8da904a6bb8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -43447,9 +43447,9 @@ RectTransform:
   m_Father: {fileID: 414825567}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -11.799988, y: 19}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -101.8, y: -23}
   m_SizeDelta: {x: 232.70789, y: 37.088898}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &913528932
@@ -43474,8 +43474,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Jumps: 0'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9adf903277534b149aedd8da904a6bb8, type: 2}
+  m_sharedMaterial: {fileID: 5178163906055332215, guid: 9adf903277534b149aedd8da904a6bb8, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -43754,7 +43754,7 @@ GameObject:
   - component: {fileID: 1252682369}
   m_Layer: 0
   m_Name: Lava
-  m_TagString: Untagged
+  m_TagString: Lava
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48934,7 +48934,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.24049902, y: -0.9430034}
+  m_Offset: {x: -0.26263967, y: -1.1533881}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -48945,7 +48945,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 5.959222, y: 3.5242257}
+  m_Size: {x: 1.5743635, y: 1.3760846}
   m_EdgeRadius: 0
 --- !u!114 &1733747073
 MonoBehaviour:
